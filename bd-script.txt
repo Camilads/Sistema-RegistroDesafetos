@@ -1,0 +1,18 @@
+create database guardomagoa;
+use guardomagoa;
+
+create table desafeto(
+id int(5) auto_increment primary key,
+nome varchar (30),
+amigos varchar(200),
+escola varchar (100),
+descricao varchar (200)
+);
+
+create table ofensa(
+id int(5) auto_increment primary key,
+desafeto_id int(5),
+data_hora timestamp,
+descricao varchar(200),
+constraint fk_desafeto foreign key(desafeto_id) references desafeto(id)
+);

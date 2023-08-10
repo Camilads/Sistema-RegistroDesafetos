@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cadastrar Nova Ofensa</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="mb-4">Cadastrar Nova Ofensa</h1>
+        <form id="cadastrar-ofensa-form">
+            <input type="hidden" id="desafeto-id" value="${desafetoId}">
+            <div class="form-group">
+                <label for="descricao">Descrição da Ofensa:</label>
+                <textarea id="descricao" class="form-control" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Cadastrar Ofensa</button>
+            <div id="mensagem" class="mt-3"></div>
+        </form>
+    </div>
+    
+    <script src="cadastrarOfensa.js"></script>
+</body>
+</html>
+

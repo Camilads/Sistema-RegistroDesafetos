@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cadastrar Novo Desafeto</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="mb-4">Cadastrar Novo Desafeto</h1>
+        <form id="cadastro-form">
+            <div class="form-group">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" class="form-control" required>
+            </div>
+            <div class="form-group">
+                <label for="amigos">Amigos:</label>
+                <input type="text" id="amigos" class="form-control" required>
+            </div>
+            <div class="form-group">
+                <label for="escola">Escola:</label>
+                <input type="text" id="escola" class="form-control" required>
+            </div>
+            <div class="form-group">
+                <label for="descricao">Descrição:</label>
+                <textarea id="descricao" class="form-control" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Cadastrar</button>
+            <div id="mensagem" class="mt-3"></div>
+        </form>
+    </div>
+    <script src="cadastroDesafeto.js"></script>
+</body>
+</html>
